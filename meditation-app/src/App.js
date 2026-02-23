@@ -6,7 +6,7 @@ import { TimerProvider } from "./context/TimerContext";
 function App() {
   return (
     <TimerProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/meditation-app">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/meditation" element={<Meditation />} />
